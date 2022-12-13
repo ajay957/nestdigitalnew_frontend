@@ -7,4 +7,8 @@ import { Injectable } from '@angular/core';
 export class ApiService {
 
   constructor(private http:HttpClient) { }
+
+  addEmployee=(dataToSend:any)=>{
+    return this.http.post("http://localhost:8080/addemployee",dataToSend)
+  }
 }
