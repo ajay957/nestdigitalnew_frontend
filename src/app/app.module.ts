@@ -7,7 +7,8 @@ import { AdminComponent } from './admin/admin.component';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { AddemployeeComponent } from './addemployee/addemployee.component'
+import { AddemployeeComponent } from './addemployee/addemployee.component';
+import { AdminnavbarComponent } from './adminnavbar/adminnavbar.component'
 const myRoute:Routes=[
   {
     path:"",
@@ -23,7 +24,8 @@ const myRoute:Routes=[
   declarations: [
     AppComponent,
     AdminComponent,
-    AddemployeeComponent
+    AddemployeeComponent,
+    AdminnavbarComponent
   ],
   imports: [
     BrowserModule,
